@@ -1,0 +1,81 @@
+
+/*****履歴無しメッセージのレイアウト*****/
+#message {
+	color:#2e8b57;
+	border:1px solid #2e8b57;
+	background-color:#a7d28d;
+	margin:0 auto;
+	width:75%;
+	padding:1em;
+	text-align: center;
+}
+
+/*****submit要素（ボタン）のレイアウト*****/
+#del_btn {
+	text-align: center;
+}
+
+/*****テーブル要素のレイアウト*****/
+table, th, td {
+    width: 80%;
+    margin: 3% auto;
+	padding: 10px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing:0;
+    font-size: 14px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+}
+	/*****
+		各テーブルセル幅の比率は「コーヒー豆の商品情報,宛先名4文字,宛先住所20文字」の場合を基準に一部を調整して定義した
+	*****/
+	.itemName {
+		width: 7.3%;
+	}
+
+	.itemNameKana {
+		width: 8.7%
+	}
+
+	.itemImage {
+		width: 7.7%;
+	}
+
+	.releaseCompany {
+		width: 9.5%;
+	}
+
+	.releaseDate {
+		width: 9.5%;
+	}
+
+	.price {
+		width: 6.2%;
+	}
+
+	.productCount {
+		width: 4.9%;
+	}
+
+	.totalFee {
+		width: 7.7%;
+	}
+
+	.name {
+		width: 8.3%;
+	}
+
+	.address {
+		width: 30.2%
+	}
+
+table td {
+    width: auto;
+}
+

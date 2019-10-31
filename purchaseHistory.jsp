@@ -18,28 +18,17 @@
 		<!-- 	Listが空でないときに購入履歴を表示する -->
 		<s:if test="!purchaseHistoryInfoDTOList.isEmpty()">
 			<table>
-			<!--  テーブルセル幅の比率は「宛先名4文字,宛先住所20文字」の場合を基準に一部を微調整して定義した -->
-				<colgroup width="6.3%">
-				<colgroup width="7.7%">
-				<colgroup width="7.7%">
-				<colgroup width="9.9%">
-				<colgroup width="9.1%">
-				<colgroup width="6.2%">
-				<colgroup width="4.9%">
-				<colgroup width="7.7%">
-				<colgroup width="8.3%">
-				<colgroup width="32.2%">
 				<tr>
-					<th>商品名</th>
-					<th>ふりがな</th>
-					<th>商品画像</th>
-					<th>発売会社名</th>
-					<th>発売年月日</th>
-					<th>値段</th>
-					<th>個数</th>
-					<th>合計金額</th>
-					<th>宛先名前</th>
-					<th>宛先住所</th>
+					<th class="itemName">商品名</th>
+					<th class="itemNameKana">ふりがな</th>
+					<th class="itemImage">商品画像</th>
+					<th class="releaseCompany">発売会社名</th>
+					<th class="releaseDate">発売年月日</th>
+					<th class="price">値段</th>
+					<th class="productCount">個数</th>
+					<th class="totalFee">合計金額</th>
+					<th class="name">宛先名前</th>
+					<th class="address">宛先住所</th>
 				</tr>
 				<!-- 	 ループ処理で購入履歴を取得し表示する-->
 				<s:iterator value="purchaseHistoryInfoDTOList">
